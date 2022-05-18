@@ -9,14 +9,11 @@ const Headingtext = styled.h2`
 
 interface props {
     label: string;
-    color?: Boolean;
 }
 
 const CustomHeader = ({label}: props) => {
   return (
-    <div>
         <Headingtext>{label}</Headingtext>
-    </div>
   )
 }
 
