@@ -24,30 +24,31 @@ const Styles = styled.div`
 
   .navbar-home {
     position: relative;
-    font-size: 20px;
+    font-size: 1.25rem;
+    bottom: 5%;
     left: 6%;
   }
   .navbar-categories {
     position: absolute;
     left: 12%;
     top: 11%;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .navbar-latest {
     position: absolute;
     left: 22%;
     top: 11%;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .navbar-form {
     position: absolute !important;
-    top:16%;
-    left: 72%;
-    width: 160px;
+    top: 16%;
+    left: 73%;
+    width: 9rem;
   }
 
   .navbar-login {
-    font-size: 20px;
+    font-size: 1.25rem;
     position: absolute;
     left: 87%;
     top: 11%;
