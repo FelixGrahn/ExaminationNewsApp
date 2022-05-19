@@ -46,7 +46,7 @@ const Styles = styled.div`
     left: 73%;
     width: 9rem;
   }
-
+  
   .navbar-login {
     font-size: 1.25rem;
     position: absolute;
