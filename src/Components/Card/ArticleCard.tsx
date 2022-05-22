@@ -6,7 +6,7 @@ import LinkText from '../Link/LinkText';
 
 
 const CardContainer = styled.div`
-  /* width: 20%; */
+  width: 50%;
   border: solid 1px;
   display: flex;
   flex-direction: column;
