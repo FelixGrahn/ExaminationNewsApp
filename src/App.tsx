@@ -1,15 +1,15 @@
 import * as React from 'react'
-// import {
-//   BrowserRouter as Router,
-//   Route,
-//   Link
-// } from "react-router-dom";
-import Landingpage from './view/Landingpage';
+import { Outlet } from "react-router-dom";
+import Navbar from './Components/Navbar/Navbar';
+import Landingpage from './routes/Landingpage';
 
 function App() {
   return (
     <div>
+        {/* <Navbar/> */}
+        <h3>app</h3>
       <Landingpage/>
+      <Outlet />
     </div>
   );
 }

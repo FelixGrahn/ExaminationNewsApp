@@ -2,6 +2,16 @@ import React from 'react'
 import ArticleCard from '../Components/Card/ArticleCard'
 import CustomHeader from '../Components/Headers/CustomHeader'
 
+const Genre =[
+  {name: "tech"},
+  {name: "sport"},
+  {name: "buissness"},
+  {name: "clothes"},
+  {name: "scince"},
+  {name: "tech"},
+  {name: "tech"},
+
+]
 
 const Datapackage = [
   {

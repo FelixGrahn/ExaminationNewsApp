@@ -2,11 +2,15 @@ import * as React from 'react'
 import styled from "styled-components";
 import BodyText from '../Bodytext/BodyText';
 import CustomHeader from '../Headers/CustomHeader';
+import LinkText from '../Link/LinkText';
 
 
 const CardContainer = styled.div`
-  width: 20%;
+  /* width: 20%; */
   border: solid 1px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.2rem;
 `;
 
 const StyledWrapper = styled.div`
@@ -14,10 +18,6 @@ const StyledWrapper = styled.div`
     justify-content: center;
     flex-direction: column;
 `;
-
-const theme = { //experimental
-    main: "mediumseagreen"
-  };
 
 interface props {
     articleData: any;
@@ -33,8 +33,8 @@ const ArticleCard = ({articleData}: props) => {
         {articleData.map((article, key) => {
             return (
             <CardContainer key={key}>
-                <CustomHeader label={article.title}/>
-                {/* <BodyText theme={theme} body={article.description}/>  experimental*/}
+                <LinkText label={article.title} urladress={"Article"} searchterm={article.id}/>
+                {/* <CustomHeader label={article.title}/> */}
                 <BodyText body={article.description}/> 
             
             </CardContainer>

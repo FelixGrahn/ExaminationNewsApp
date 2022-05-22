@@ -9,6 +9,7 @@ const Headingtext = styled.h2`
 
 interface props {
     label: string;
+    
 }
 
 const CustomHeader = ({label}: props) => {
