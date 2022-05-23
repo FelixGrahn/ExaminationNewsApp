@@ -34,7 +34,6 @@ const Navbar = ({}: props) => {
       <LinkStyling>
       <LinkText label={"Home"} urladress={""}/>
       <LinkText label={"Article"} urladress={"Article"}/>
-      <LinkText label={"Searchresults"} urladress={"Searchresults"}/>
       </LinkStyling>
       <LongoutStyling>
         <h3>Logout</h3>

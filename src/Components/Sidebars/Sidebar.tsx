@@ -26,11 +26,11 @@ interface props {
 const Sidebar = ({}: props) => {
     let navigate = useNavigate();
     const [searchterm, setSearchterm] = useState("");
-    console.log("searchterm", searchterm);
+    // console.log("searchterm", searchterm);
     
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log("searchterm2", searchterm);
+        // console.log("searchterm2", searchterm);
         navigate(`/Searchresults/${searchterm}`)
       }
         
