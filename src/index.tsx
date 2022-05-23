@@ -15,7 +15,7 @@ import styled from "styled-components";
 
 
 const SidebarDevider = styled.div`
-    background-color: hotpink;
+    /* background-color: hotpink; */
     /* width: 100%;
     height: 5rem;
     
@@ -24,7 +24,7 @@ const SidebarDevider = styled.div`
 `;
 
 const ContentDiv = styled.div`
-    background-color: grey;
+    /* background-color: grey; */
     /* width: 100%;
     height: 5rem;
     
