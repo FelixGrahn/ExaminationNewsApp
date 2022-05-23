@@ -12,6 +12,7 @@ import Pagenotfound from './routes/Pagenotfound';
 import Navbar from './Components/Navbar/Navbar';
 import Sidebar from './Components/Sidebars/Sidebar';
 import styled from "styled-components";
+import Footer from './Components/Footer/Footer';
 
 
 const SidebarDevider = styled.div`
@@ -33,9 +34,13 @@ const ContentDiv = styled.div`
 `;
 
 
+
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement);
 root.render(
+    
+    
+
     <BrowserRouter>
         <Navbar/>
 
@@ -56,6 +61,9 @@ root.render(
 
     <Sidebar/>
 
-    </SidebarDevider>
+        </SidebarDevider>
+        <Footer/>
     </BrowserRouter>
 );
+
+
