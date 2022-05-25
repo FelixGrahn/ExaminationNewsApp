@@ -3,20 +3,18 @@ import styled from "styled-components";
 import LinkText from "../Link/LinkText";
 
 const FooterNavbarStyling = styled.div`
-  background-color: #6bd870;
+background-color: #6bd870;
 
 width: 99.5%;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  bottom: 0%;
-  border: 1rem;
-  border-radius: 0.188rem; 
-    position:absolute
-    left: 0%;
-    
-     
-        
+height: 5rem;
+display: flex;
+align-items: center;
+bottom: 0%;
+border: 1rem;
+border-radius: 0.188rem; 
+position:absolute
+left: 0%;
+  
 `;
 
 const FooterText = styled.div`
@@ -26,7 +24,7 @@ const FooterText = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   left: 6%;
-  padding-right: 20px;
+  padding-right: 1.25rem;
 `;
 
 

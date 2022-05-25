@@ -7,19 +7,17 @@ const NavbarStyling = styled.div`
   background-color: #d4d67c;
   display: flex;
   right: 0.6%;
-  width:13%;
-  top: 88px;
+  width: 13%;
+  top: 5.5rem;
   position: fixed;
   height: 100%;
   padding-top: 5rem;
   .searchfield {
-    
     position: relative;
 
-
-    width:108%;
+    width: 108%;
     height: 1.875rem;
-    bottom:221%
+    bottom: 221%;
   }
 `;
 const LinkStyling = styled.div`

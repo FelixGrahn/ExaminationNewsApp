@@ -17,7 +17,7 @@ const NavbarStyling = styled.div`
 const LinkStyling = styled.div`
   justify-content: space-evenly;
   width: 50%;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   a:link {
@@ -40,7 +40,7 @@ const LogoutStyling = styled.div`
   justify-content: center;
   display: flex;
   left: 40%;
-  margin-right: 2px;
+  margin-right: 0.125rem;
   a:hover {
     color: white;
   }
