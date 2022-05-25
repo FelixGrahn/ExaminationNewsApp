@@ -3,15 +3,15 @@ import styled from "styled-components";
 import LinkText from "../Link/LinkText";
 
 const FooterNavbarStyling = styled.div`
-background-color: #6bd870;
+background-color:#67aa69;
 
-width: 99.5%;
+width: 99.4%;
 height: 5rem;
 display: flex;
 align-items: center;
 bottom: 0%;
-border: 1rem;
-border-radius: 0.188rem; 
+
+
 position:absolute
 left: 0%;
   

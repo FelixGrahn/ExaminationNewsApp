@@ -4,8 +4,8 @@ import LinkText from '../Link/LinkText';
 
 
 const NavbarStyling = styled.div`
-  background-color: #6bd870;
-  width: 100%;
+  background-color: #67aa69;
+  width: 99.9%;
   height: 5rem;
   display: flex;
   align-items: center;

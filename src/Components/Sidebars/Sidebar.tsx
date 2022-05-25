@@ -4,7 +4,7 @@ import LinkText from '../Link/LinkText';
 import { useNavigate } from 'react-router-dom';
 
 const NavbarStyling = styled.div`
-  background-color: #d4d67c;
+  background-color: #12aae3;
   display: flex;
   right: 0.6%;
   width: 13%;
@@ -14,10 +14,10 @@ const NavbarStyling = styled.div`
   padding-top: 5rem;
   .searchfield {
     position: relative;
-
-    width: 108%;
+    width: 110%;
     height: 1.875rem;
-    bottom: 221%;
+    bottom: 190%;
+    left: 6%;
   }
 `;
 const LinkStyling = styled.div`
