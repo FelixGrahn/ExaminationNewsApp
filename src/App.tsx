@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       {/* <Navbar/> */}
-      <h3>app</h3>
+      
       <Landingpage />
       <Footer />
       <Outlet />

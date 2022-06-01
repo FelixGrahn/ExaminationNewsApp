@@ -12,12 +12,26 @@ const NavbarStyling = styled.div`
   position: fixed;
   height: 100%;
   padding-top: 5rem;
+
   .searchfield {
     position: relative;
-    width: 110%;
+    width: 90%;
     height: 1.875rem;
-    bottom: 190%;
-    left: 6%;
+    top: -200%;
+    left: 8%;
+    @media (max-width: 414px){
+      width:84%;
+      position:relative;
+      left: 5%;
+    }
+  }
+  @media (max-width: 414px) {
+    display: flex;
+    position: absolute;
+    top:80px;
+    left: 65%;
+    width: 144px;
+    height: 216px;
   }
 `;
 const LinkStyling = styled.div`
@@ -33,6 +47,11 @@ const LinkStylingCategories = styled.div`
   left: 16%
   margin: 0.125rem;
   font-family: Arial, Helvetica, sans-serif;
+   @media (max-width: 414px){
+      font-size: 14px;
+      top: 16%;
+      left: 4%;
+    }
 `;
 const LinkStylingCategory = styled.div`
   flex-direction: column;

@@ -17,7 +17,7 @@ export const Article = () => {
 
   const Apicall = (params2) => {
     console.log('params', params2)
-    const apiUrl = 'https://localhost:44337/News/GetArticle/' + params2;
+    const apiUrl = 'https://localhost:5001/News/GetArticle/' + params2;
     console.log('apiUrl', apiUrl)
     fetch(apiUrl)
     .then((response) => response.json())

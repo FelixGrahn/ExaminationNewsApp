@@ -6,19 +6,44 @@ import LinkText from '../Link/LinkText';
 
 
 const CardContainer = styled.div`
-  width: 50%;
+  width: 24%;
+  color: black;
   border: solid 1px;
   display: flex;
   flex-direction: column;
   margin: 0.2rem;
+  @media (max-width: 414px) {
+    width: 60%;
+  }
 `;
 
 const StyledWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: solid 1px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @media (max-width: 414px) {
+    width: 99%;
+  }
+  
 `;
+
+const StyledCardHeader = styled.div`
+  font-color: black;
+  font-size: 20px;
+  a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: "Lucida Console", "Monaco", monospace;
+  }
+  a:-webkit-any-link:hover {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+ 
+`;
+
 
 interface props {
     articleData: any;
@@ -45,14 +70,19 @@ const ArticleCard = ({articleData, landingPage}: props) => {
         <h5>{articleData.categori}</h5>
           {articleData.articels.map((article, key) => {
               return (
-              <CardContainer key={key}>
-                
-                  <LinkText label={article.title} urladress={"Article"} searchterm={article.id}/>
+                <CardContainer key={key}>
+                  <StyledCardHeader>
+                    <LinkText
+                      label={article.title}
+                      urladress={"Article"}
+                      searchterm={article.id}
+                    />
+                  </StyledCardHeader>
+
                   {/* <CustomHeader label={article.title}/> */}
-                  <BodyText body={article.description}/> 
-              
-              </CardContainer>
-          )})}
+                  <BodyText body={article.description} />
+                </CardContainer>
+              );})}
       </StyledWrapper>
     )
     

@@ -4,14 +4,21 @@ import LinkText from '../Link/LinkText';
 
 
 const NavbarStyling = styled.div`
-  background-color: #67aa69;
-  width: 99.9%;
+  position:sticky; 
+  background-color: #4ad85c;
+  width: 100%;
   height: 5rem;
   display: flex;
   align-items: center;
   top: 0%;
   border: 1rem;
   border-radius: 1px;
+  @media (max-width: 414px) {
+    position:absolute;
+    width: 100%;
+    left: 0px;
+    
+  }
 `;
 
 const LinkStyling = styled.div`
@@ -31,6 +38,13 @@ const LinkStyling = styled.div`
   a:hover {
     color: white;
   }
+  @media (max-width: 414px){
+    position: fixed;
+    justify-content: space-around;
+    left: 2%;
+    display: flex;
+    margin: 2px;
+  }
 `;
 
 const LogoutStyling = styled.div`
@@ -41,8 +55,14 @@ const LogoutStyling = styled.div`
   display: flex;
   left: 40%;
   margin-right: 0.125rem;
-  a:hover {
+  h3:hover {
     color: white;
+  }
+  @media (max-width: 414px) {
+    position: relative;
+    left: 10%;
+    display: flex;
+    margin-left: auto;
   }
 `;
 
@@ -57,14 +77,16 @@ const Navbar = ({}: props) => {
   return (
     <NavbarStyling>
       <LinkStyling>
-      <LinkText label={"Home"} urladress={""}/>
-      <LinkText label={"Article"} urladress={"Article"}/>
+        <LinkText label={"Home"} urladress={""} />
+        <LinkText label={"Article"} urladress={"Article"} />
+        <LinkText label={"Register"} urladress={"Register"} />
+        <LinkText label={"Login"} urladress={"Login"} />
       </LinkStyling>
-      <LogoutStyling>
+     {/*  <LogoutStyling>
         <h3>Logout</h3>
-      </LogoutStyling>
+      </LogoutStyling> */}
     </NavbarStyling>
-  )
+  );
 }
 
 export default Navbar
