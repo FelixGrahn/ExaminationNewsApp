@@ -8,10 +8,14 @@ const handleSubmit = (event) => {
   console.log();
 };
 
-const Form = styled.form``;
+const Form = styled.form`
+  display: flex;
+  flex-flow: column;
+  /* background-color: #787878; */
+`;
 
 const TextInput = styled.input`
-  position: relative;
+  /* position: relative; */
   left: 40%;
   width: 60%;
   padding: 12px 20px;
@@ -21,26 +25,26 @@ const TextInput = styled.input`
   border-radius: 4px;
   box-sizing: border-box;
   @media (max-width: 414px) {
-    top: 7.5rem;
+    /* top: 7.5rem; */
     width: 12.5rem;
     height: 3.125rem;
-    left: 4%;
+    /* left: 4%; */
   }
 `;
 
 const Label = styled.label``;
 
 const Button = styled.button`
-  position: relative;
+  /* position: relative; */
   width: 30%;
   height: 2.5rem;
   top: 3.75rem;
-  left: -4%;
+  /* left: -4%; */
   @media (max-width: 414px) {
     width: 10rem;
     height: 3.125rem;
-    top: 180px;
-    left: -42%;
+    /* top: 180px; */
+    /* left: -42%; */
 
   }
 `;

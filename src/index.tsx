@@ -1,6 +1,7 @@
 import * as React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createGlobalStyle } from 'styled-components'
 import App from "./App";
 import Searchresults from "./routes/Searchresults";
 import Article from "./routes/Article";
@@ -12,6 +13,14 @@ import Footer from "./Components/Footer/Footer";
 import Register from "./routes/Register";
 import Login from "./routes/Login";
 
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: purple;
+    margin: 0%;
+  }
+`;
+
 const SidebarDevider = styled.div`
   /* background-color: hotpink; */
   /* width: 100%;
@@ -19,6 +28,10 @@ const SidebarDevider = styled.div`
     
     align-items: center; */
   display: flex;
+
+  @media (max-width: 414px) {
+    padding-top: 5rem;
+  }
 `;
 
 const ContentDiv = styled.div`
@@ -35,6 +48,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <BrowserRouter>
+  <GlobalStyle/>
     <Navbar />
 
     <SidebarDevider>
