@@ -8,6 +8,7 @@ import Landingpage from "./routes/Landingpage";
 const OriginDiv = styled.div`
   height: 100%;
   width: 100%;
+  jusitfy-content: center;
 `;
 
 function App() {

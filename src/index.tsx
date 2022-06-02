@@ -28,7 +28,7 @@ const SidebarDevider = styled.div`
     height: 5rem;
     
     align-items: center; */
-  display: flex;
+    display: flex;
 
   @media (max-width: 414px) {
     padding-top: 5rem;
@@ -36,10 +36,9 @@ const SidebarDevider = styled.div`
 `;
 
 const ContentDiv = styled.div`
-  /* background-color: grey; */
+   background-color: yellow; 
   /* width: 100%;
     height: 5rem;
-    
     align-items: center; */
   /* display: flex; */
 `;

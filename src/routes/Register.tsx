@@ -10,6 +10,15 @@ const handleSubmit = (event) => {
 
 const FormContainer = styled.div``;
 
+const ContentDiv = styled.div`
+
+  /* width: 100%;
+    height: 5rem;
+    //justify-self: center;
+    align-items: center; 
+   display: flex; 
+`;
+
 const Form = styled.form`
   display: flex;
   justify-content: center;
@@ -114,39 +123,41 @@ function Register() {
     /*Apicall();*/
   }, []);
 
-  return (
-    <Form>
-      <TextInput
-        id="email"
-        type="email"
-        placeholder="Email"
-        onChange={(e) => setEmail(e.target.value)}
-      ></TextInput>
-      <TextInput
-        id="username"
-        type="text"
-        placeholder="Username"
-        onChange={(e) => setUsername(e.target.value)}
-      ></TextInput>
-      <TextInput
-        id="password"
-        type="password"
-        placeholder="Password"
-        onChange={(e) => setPassword(e.target.value)}
-      ></TextInput>
-      <TextInput
-        id="confirm"
-        type="password"
-        placeholder="Confirm Password"
-        onChange={(e) => setConfirmPassword(e.target.value)}
-      ></TextInput>
+    return (
+     
+        <Form>
+          <TextInput
+            id="email"
+            type="email"
+            placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}
+          ></TextInput>
+          <TextInput
+            id="username"
+            type="text"
+            placeholder="Username"
+            onChange={(e) => setUsername(e.target.value)}
+          ></TextInput>
+          <TextInput
+            id="password"
+            type="password"
+            placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
+          ></TextInput>
+          <TextInput
+            id="confirm"
+            type="password"
+            placeholder="Confirm Password"
+            onChange={(e) => setConfirmPassword(e.target.value)}
+          ></TextInput>
 
-      <Label id="label">{label}</Label>
-      <Button id="submit" type="button" onClick={handleSubmit}>
-        Submit
-      </Button>
-    </Form>
-  );
+          <Label id="label">{label}</Label>
+          <Button id="submit" type="button" onClick={handleSubmit}>
+            Submit
+          </Button>
+        </Form>
+      
+    );
 }
 
 export default Register;
