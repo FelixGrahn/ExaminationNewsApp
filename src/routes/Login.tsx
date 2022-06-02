@@ -8,12 +8,12 @@ import LinkText from "../Components/Link/LinkText";
 
 
 const Form = styled.form`
-
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 `;
 
 const TextInput = styled.input`
-  position: relative;
-  left: 100%;
   top: 40px;
   width: 60%;
   padding: 12px 20px;
@@ -22,6 +22,7 @@ const TextInput = styled.input`
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+
   @media (max-width: 414px) {
     width: 200px;
     height: 50px;
@@ -33,13 +34,17 @@ const TextInput = styled.input`
 const Label = styled.label`
 
 `;
+const ButtonParent = styled.div`
+  width: 100%;
+  justify-content: center;
+  display: flex;
+`;
 
 const Button = styled.button`
-  position: relative;
   width: 30%;
   height: 40px;
-  top: 110px;
-  left: 55%;
+  top: 114px;
+  left: 115%;
   @media (max-width: 414px) {
     width: 160px;
     height: 50px;
@@ -47,8 +52,7 @@ const Button = styled.button`
     top: 220px;
   }
 `;
-const ButtonRegister = styled.button`
-  position: relative;
+const RegisterContainer = styled.button`
   width: 30%;
   height: 40px;
   top: 114px;
@@ -129,12 +133,16 @@ function Login() {
         ></TextInput>
 
         <Label id="label">{label}</Label>
-        <Button id="submit" type="button" onClick={handleSubmit}>
-          Login
-        </Button>
-        <ButtonRegister>
-        <LinkText label={"Register"} urladress={"Register"} />
-        </ButtonRegister>
+        <ButtonParent>
+          <Button id="submit" type="button" onClick={handleSubmit}>
+            Login
+          </Button>
+          <RegisterContainer>
+             <LinkText label={"Register"} urladress={"Register"} />
+         </RegisterContainer>
+
+          
+        </ButtonParent>
       </Form>
     </div>
   );

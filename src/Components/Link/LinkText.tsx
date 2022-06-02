@@ -9,6 +9,8 @@ const StyledLink = styled(Link)`
   /*color: ${(props) => (props.color ? "grey" : "blue")};*/
   text-decoration: none;
   color: black;
+  height:100%;
+  width:100%;
 `;
 
 

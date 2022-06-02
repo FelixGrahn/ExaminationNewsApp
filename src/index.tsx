@@ -37,7 +37,7 @@ const SidebarDevider = styled.div`
 `;
 
 const ContentDiv = styled.div`
-   background-color: yellow;
+ 
    height: 100%;
    width: 100%
   /* width: 100%;

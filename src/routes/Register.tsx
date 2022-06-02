@@ -8,20 +8,12 @@ const handleSubmit = (event) => {
   console.log();
 };
 
-const FormContainer = styled.div``;
-
-const ContentDiv = styled.div`
-
-  /* width: 100%;
-    height: 5rem;
-    //justify-self: center;
-    align-items: center; 
-   display: flex; */
-`;
 
 const Form = styled.form`
   display: flex;
   justify-content: center;
+  width: 50%;
+
   /* left: 280%;
   width: 140%;
   top: 40px; */
@@ -36,6 +28,7 @@ const TextInput = styled.input`
   top: 40px;
   padding: 12px 20px;
   margin: 8px 0; */
+  height: 40px;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -51,6 +44,7 @@ const TextInput = styled.input`
 const Label = styled.label``;
 
 const Button = styled.button`
+  height:40px;
   /*position: relative;*/
   /* left: 37.5rem;
   width: 60%;
@@ -63,6 +57,13 @@ const Button = styled.button`
     /* top: 180px; */
     /* left: -42%; */
   }
+`;
+
+const StyledDiv = styled.div`
+  width: 100%;
+  height: 100%;
+  
+  text-align: -webkit-center;
 `;
 
 // const Title = styled.h1`
@@ -124,7 +125,7 @@ function Register() {
   }, []);
 
     return (
-     
+      <StyledDiv>
         <Form>
           <TextInput
             id="email"
@@ -156,7 +157,7 @@ function Register() {
             Submit
           </Button>
         </Form>
-      
+      </StyledDiv>
     );
 }
 

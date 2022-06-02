@@ -8,27 +8,27 @@ const NavbarStyling = styled.div`
   display: flex;
   /* left: 87%; */
   /* width: 13%; */
-  top: 5.0rem;
+  top: 5rem;
   /* position: fixed; */
   height: 100%;
   /* padding-top: 5rem; */
-
+  position: sticky;
   .searchfield {
     /* position: relative; */
     width: 90%;
     height: 1.875rem;
     top: -200%;
     left: 8%;
-    @media (max-width: 414px){
-      width:84%;
-      position:relative;
+    @media (max-width: 414px) {
+      width: 84%;
+      position: relative;
       left: 5%;
     }
   }
   @media (max-width: 414px) {
     display: flex;
     /* position: absolute; */
-    top:80px;
+    top: 80px;
     left: 65%;
     width: 144px;
     height: 216px;

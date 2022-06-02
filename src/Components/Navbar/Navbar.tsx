@@ -1,12 +1,11 @@
-import * as React from 'react'
-import { useState } from 'react';
-import { useEffect } from 'react';
+import * as React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 import styled from "styled-components";
-import LinkText from '../Link/LinkText';
-
+import LinkText from "../Link/LinkText";
 
 const NavbarStyling = styled.div`
-  position:sticky; 
+  position: sticky;
   background-color: #4db159;
   width: 100%;
   height: 5rem;
@@ -16,10 +15,10 @@ const NavbarStyling = styled.div`
   border: 1rem;
   border-radius: 1px;
   @media (max-width: 414px) {
-    position:fixed;
+    position: fixed;
     width: 100%;
     left: 0px;
-    z-index: 1; 
+    z-index: 1;
   }
 `;
 
@@ -46,10 +45,10 @@ const LinkStyling = styled.div`
   a:hover {
     color: white;
   }
-  @media (max-width: 414px){
+  @media (max-width: 414px) {
     position: fixed;
     justify-content: space-around;
-     z-index: 1;
+    z-index: 1;
     /* left: 2%; */
     display: flex;
     /* margin: 2px; det såg inte ut som det behövdes men jag kan ha fel*/
@@ -82,13 +81,13 @@ const LogoutStyling = styled.div`
 
 const LogoutButton = styled.button`
   position: absolute;
+  cursor: pointer;
   width: 30%;
   height: 40px;
   font-family: Arial, Helvetica, sans-serif;
   border: none;
   background-color: transparent;
   font-size: 1.22rem;
-
   display: flex;
   left: 74%;
   top: 4%;
@@ -104,24 +103,18 @@ const LogoutButton = styled.button`
   }
 `;
 
-
-interface props {
-    
-}
+interface props {}
 
 function Logout() {
   window.localStorage.removeItem("token");
   window.location.replace("http://localhost:3000");
 }
 
+const Navbar = ({}: props) => {
+  const [isLoggedin, setIsLoggedin] = useState(false);
 
-
-const Navbar = ({ }: props) => {
-    const [isLoggedin, setIsLoggedin] = useState(false);
-  
   useEffect(() => {
     if (window.localStorage.getItem("token")) {
-
       setIsLoggedin(true);
     }
   });
@@ -148,6 +141,6 @@ const Navbar = ({ }: props) => {
       </LogoutStyling> */}
     </NavbarStyling>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
