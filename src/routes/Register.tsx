@@ -16,34 +16,34 @@ const ContentDiv = styled.div`
     height: 5rem;
     //justify-self: center;
     align-items: center; 
-   display: flex; 
+   display: flex; */
 `;
 
 const Form = styled.form`
   display: flex;
   justify-content: center;
-  left: 280%;
+  /* left: 280%;
   width: 140%;
-  top: 40px;
+  top: 40px; */
   flex-flow: column;
   /* background-color: #787878; */
 `;
 
 const TextInput = styled.input`
   //position: relative;
-  left: 280%;
+  /* left: 280%;
   width: 140%;
   top: 40px;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px 0; */
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   @media (max-width: 414px) {
     /* top: 7.5rem; */
-    width: 12.5rem;
-    height: 3.125rem;
+    /* width: 12.5rem;
+    height: 3.125rem; */
     /* left: 4%; */
   }
 `;
@@ -52,28 +52,28 @@ const Label = styled.label``;
 
 const Button = styled.button`
   /*position: relative;*/
-  left: 37.5rem;
+  /* left: 37.5rem;
   width: 60%;
   height: 2.5rem;
-  top: 70px;
+  top: 70px; */
   /* left: -4%; */
   @media (max-width: 414px) {
-    width: 10rem;
-    height: 3.125rem;
+    /* width: 10rem;
+    height: 3.125rem; */
     /* top: 180px; */
     /* left: -42%; */
   }
 `;
 
-const Title = styled.h1`
-  position: relative;
-  left: 62%;
-  font-family: Arial, Helvetica, sans-serif;
-  @media (max-width: 414px) {
-    left: 50%;
-    top: 6.25rem;
-  }
-`;
+// const Title = styled.h1`
+//   position: relative;
+//   left: 62%;
+//   font-family: Arial, Helvetica, sans-serif;
+//   @media (max-width: 414px) {
+//     left: 50%;
+//     top: 6.25rem;
+//   }
+// `;
 
 function Register() {
   const [data, setData] = useState([]);

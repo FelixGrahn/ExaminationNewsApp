@@ -6,15 +6,15 @@ import { useNavigate } from 'react-router-dom';
 const NavbarStyling = styled.div`
   background-color: #12aae3;
   display: flex;
-  left: 87%;
-  width: 13%;
+  /* left: 87%; */
+  /* width: 13%; */
   top: 5.0rem;
-  position: fixed;
+  /* position: fixed; */
   height: 100%;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
 
   .searchfield {
-    position: relative;
+    /* position: relative; */
     width: 90%;
     height: 1.875rem;
     top: -200%;
@@ -27,7 +27,7 @@ const NavbarStyling = styled.div`
   }
   @media (max-width: 414px) {
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     top:80px;
     left: 65%;
     width: 144px;
@@ -40,11 +40,11 @@ const LinkStyling = styled.div`
 
 `;
 const LinkStylingCategories = styled.div`
-  position: absolute;
+  /* position: absolute; */
   flex-direction: column;
   display: flex;
   top: 9%;
-  left: 16%
+  left: 16%;
   margin: 0.125rem;
   font-family: Arial, Helvetica, sans-serif;
    @media (max-width: 414px){
@@ -95,16 +95,12 @@ const Sidebar = ({}: props) => {
       <LinkStyling>
       
           <form onSubmit={handleSubmit}>
-          <label>
-              
               <input
                 type="text"
                 value={searchterm}
                 onChange={(e) => setSearchterm(e.target.value)}
                 placeholder="Search..."
               className="searchfield"/>
-                
-            </label>
           </form>
       
 

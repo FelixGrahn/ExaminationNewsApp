@@ -29,6 +29,7 @@ const SidebarDevider = styled.div`
     
     align-items: center; */
     display: flex;
+    
 
   @media (max-width: 414px) {
     padding-top: 5rem;
@@ -36,7 +37,9 @@ const SidebarDevider = styled.div`
 `;
 
 const ContentDiv = styled.div`
-   background-color: yellow; 
+   background-color: yellow;
+   height: 100%;
+   width: 100%
   /* width: 100%;
     height: 5rem;
     align-items: center; */
@@ -54,6 +57,7 @@ root.render(
     <Navbar />
 
     <SidebarDevider>
+
       <ContentDiv>
         <Routes>
           <Route path="/" element={<App />} />
@@ -69,7 +73,6 @@ root.render(
         </Routes>
        
       </ContentDiv>
-
       <Sidebar />
     </SidebarDevider>
     <Footer />
