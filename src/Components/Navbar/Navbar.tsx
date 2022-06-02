@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { useState } from 'react';
+import { useEffect } from 'react';
 import styled from "styled-components";
 import LinkText from '../Link/LinkText';
 
@@ -28,8 +30,6 @@ const LinkStyling = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   display: flex;
-
-
 
   justify-content: center;
   width: 100%;
@@ -80,23 +80,70 @@ const LogoutStyling = styled.div`
   }
 `;
 
+const LogoutButton = styled.button`
+  position: absolute;
+  width: 30%;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  background-color: transparent;
+  font-size: 1.22rem;
+
+  display: flex;
+  left: 74%;
+  top: 4%;
+
+  h3:hover {
+    color: white;
+  }
+  @media (max-width: 414px) {
+    position: relative;
+    left: 10%;
+    display: flex;
+    margin-left: auto;
+  }
+`;
+
+
 interface props {
     
 }
 
+function Logout() {
+  window.localStorage.removeItem("token");
+  window.location.replace("http://localhost:3000");
+}
 
 
 
-const Navbar = ({}: props) => {
+const Navbar = ({ }: props) => {
+    const [isLoggedin, setIsLoggedin] = useState(false);
+  
+  useEffect(() => {
+    if (window.localStorage.getItem("token")) {
+
+      setIsLoggedin(true);
+    }
+  });
+
   return (
     <NavbarStyling>
       <LinkStyling>
         <LinkText label={"Home"} urladress={""} />
         <LinkText label={"Article"} urladress={"Article"} />
-        <LinkText label={"Register"} urladress={"Register"} />
-        <LinkText label={"Login"} urladress={"Login"} />
+        {isLoggedin ? (
+          <LogoutButton
+            className="logout-button"
+            type="button"
+            onClick={Logout}
+          >
+            <h3>Logout</h3>
+          </LogoutButton>
+        ) : (
+          <LinkText label={"Login"} urladress={"Login"} />
+        )}
       </LinkStyling>
-     {/*  <LogoutStyling>
+      {/*  <LogoutStyling>
         <h3>Logout</h3>
       </LogoutStyling> */}
     </NavbarStyling>

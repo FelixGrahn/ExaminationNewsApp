@@ -7,7 +7,8 @@ import styled from "styled-components";
 const StyledLink = styled(Link)`
   /* color: grey; */
   /*color: ${(props) => (props.color ? "grey" : "blue")};*/
-  color: white;
+  text-decoration: none;
+  color: black;
 `;
 
 

@@ -3,10 +3,13 @@ import ArticleCard from "../Components/Card/ArticleCard";
 import CustomHeader from "../Components/Headers/CustomHeader";
 import axios from "axios";
 import styled from "styled-components";
+import LinkText from "../Components/Link/LinkText";
 
 
 
-const Form = styled.form``;
+const Form = styled.form`
+
+`;
 
 const TextInput = styled.input`
   position: relative;
@@ -27,7 +30,9 @@ const TextInput = styled.input`
   }
 `;
 
-const Label = styled.label``;
+const Label = styled.label`
+
+`;
 
 const Button = styled.button`
   position: relative;
@@ -35,6 +40,19 @@ const Button = styled.button`
   height: 40px;
   top: 110px;
   left: 55%;
+  @media (max-width: 414px) {
+    width: 160px;
+    height: 50px;
+    left: -40%;
+    top: 220px;
+  }
+`;
+const ButtonRegister = styled.button`
+  position: relative;
+  width: 30%;
+  height: 40px;
+  top: 114px;
+  left: 115%;
   @media (max-width: 414px) {
     width: 160px;
     height: 50px;
@@ -78,8 +96,9 @@ function Login() {
         .then((response) => {
             window.localStorage.setItem("token", response.data)
             window.location.replace("http://localhost:3000")
-        }).catch (error => {
-              setLabel("Incorrect username or password");
+        }).catch(error => {
+
+           setLabel("Incorrect username or password")
         });
           
       
@@ -101,18 +120,21 @@ function Login() {
           placeholder="Username"
           onChange={(e) => setUser(e.target.value)}
         ></TextInput>
-      
+
         <TextInput
           id="password"
           type="password"
           placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
         ></TextInput>
-        
+
         <Label id="label">{label}</Label>
         <Button id="submit" type="button" onClick={handleSubmit}>
           Login
         </Button>
+        <ButtonRegister>
+        <LinkText label={"Register"} urladress={"Register"} />
+        </ButtonRegister>
       </Form>
     </div>
   );

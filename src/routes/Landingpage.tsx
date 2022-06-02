@@ -10,7 +10,7 @@ function Landingpage() {
 
   const Apicall = () => {
     console.log("Apicall");
-    const apiUrl = 'https://localhost:44337/News/GetLatestNews';
+    const apiUrl = 'https://localhost:5001/News/GetLatestNews';
     const requestOptions = {
       method: 'POST',
       // headers: { 'Content-Type': 'application/json' },

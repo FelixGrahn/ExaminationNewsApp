@@ -6,9 +6,9 @@ import { useNavigate } from 'react-router-dom';
 const NavbarStyling = styled.div`
   background-color: #12aae3;
   display: flex;
-  right: 0.6%;
+  left: 87%;
   width: 13%;
-  top: 5.5rem;
+  top: 5.0rem;
   position: fixed;
   height: 100%;
   padding-top: 5rem;

@@ -12,11 +12,12 @@ import styled from "styled-components";
 import Footer from "./Components/Footer/Footer";
 import Register from "./routes/Register";
 import Login from "./routes/Login";
+import { useEffect } from "react";
 
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: purple;
+    background-color: #84b6a59e;
     margin: 0%;
   }
 `;
@@ -43,12 +44,14 @@ const ContentDiv = styled.div`
   /* display: flex; */
 `;
 
+
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <BrowserRouter>
-  <GlobalStyle/>
+    <GlobalStyle />
     <Navbar />
 
     <SidebarDevider>
@@ -65,6 +68,7 @@ root.render(
           <Route path="Register" element={<Register />} />
           <Route path="Login" element={<Login />} />
         </Routes>
+       
       </ContentDiv>
 
       <Sidebar />

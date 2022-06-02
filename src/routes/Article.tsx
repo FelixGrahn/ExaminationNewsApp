@@ -36,7 +36,7 @@ export const Article = () => {
 
   return (
   <div>
-    <div>Article id {params.Article}</div>
+   
 
     <div>
       <BigArticle articleData={data}/>
