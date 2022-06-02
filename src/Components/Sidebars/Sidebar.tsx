@@ -4,20 +4,34 @@ import LinkText from '../Link/LinkText';
 import { useNavigate } from 'react-router-dom';
 
 const NavbarStyling = styled.div`
-  background-color: #d4d67c;
+  background-color: #12aae3;
   display: flex;
-  right: 0.6%;
-  width: 13%;
-  top: 5.5rem;
-  position: fixed;
+  /* left: 87%; */
+  /* width: 13%; */
+  top: 5rem;
+  /* position: fixed; */
   height: 100%;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
+  position: sticky;
   .searchfield {
-    position: relative;
-
-    width: 108%;
+    /* position: relative; */
+    width: 90%;
     height: 1.875rem;
-    bottom: 221%;
+    top: -200%;
+    left: 8%;
+    @media (max-width: 414px) {
+      width: 84%;
+      position: relative;
+      left: 5%;
+    }
+  }
+  @media (max-width: 414px) {
+    display: flex;
+    /* position: absolute; */
+    top: 80px;
+    left: 65%;
+    width: 144px;
+    height: 216px;
   }
 `;
 const LinkStyling = styled.div`
@@ -26,13 +40,18 @@ const LinkStyling = styled.div`
 
 `;
 const LinkStylingCategories = styled.div`
-  position: absolute;
+  /* position: absolute; */
   flex-direction: column;
   display: flex;
   top: 9%;
-  left: 16%
+  left: 16%;
   margin: 0.125rem;
   font-family: Arial, Helvetica, sans-serif;
+   @media (max-width: 414px){
+      font-size: 14px;
+      top: 16%;
+      left: 4%;
+    }
 `;
 const LinkStylingCategory = styled.div`
   flex-direction: column;
@@ -76,16 +95,12 @@ const Sidebar = ({}: props) => {
       <LinkStyling>
       
           <form onSubmit={handleSubmit}>
-          <label>
-              
               <input
                 type="text"
                 value={searchterm}
                 onChange={(e) => setSearchterm(e.target.value)}
                 placeholder="Search..."
               className="searchfield"/>
-                
-            </label>
           </form>
       
 

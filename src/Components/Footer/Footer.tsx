@@ -3,28 +3,25 @@ import styled from "styled-components";
 import LinkText from "../Link/LinkText";
 
 const FooterNavbarStyling = styled.div`
-background-color: #6bd870;
-
-width: 99.5%;
-height: 5rem;
-display: flex;
-align-items: center;
-bottom: 0%;
-border: 1rem;
-border-radius: 0.188rem; 
-position:absolute
-left: 0%;
-  
+  background-color: #4db159;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  bottom: 0%;
+  left: 0%;
+  position:fixed;
+  justify-content: space-evenly;
 `;
 
 const FooterText = styled.div`
-  position: relative;
+  /* position: relative; */
   justify-content: space-between;
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
-  left: 6%;
-  padding-right: 1.25rem;
+  /* left: 6%;
+  padding-right: 1.25rem; */
 `;
 
 

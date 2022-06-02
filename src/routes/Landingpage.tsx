@@ -5,15 +5,12 @@ import CustomHeader from '../Components/Headers/CustomHeader'
 
 
 
-
-
-
 function Landingpage() {
   const [data, setData] = useState([]);
 
   const Apicall = () => {
     console.log("Apicall");
-    const apiUrl = 'https://localhost:44337/News/GetLatestNews' ;
+    const apiUrl = 'https://localhost:5001/News/GetLatestNews';
     const requestOptions = {
       method: 'POST',
       // headers: { 'Content-Type': 'application/json' },
@@ -24,10 +21,7 @@ function Landingpage() {
       .then((data) => setData(data));
   }
 
-  const TestCall = (article) => {
-    console.log("article", article);
-
-  }
+ 
 
 
   useEffect(() => {
@@ -42,7 +36,7 @@ function Landingpage() {
   return (
     
     <div>
-      <h1>LandingPage</h1>
+      <h1>Latest News</h1>
       {data.map((article, key) => <ArticleCard key={key} landingPage={true} articleData={article}/>)}
       
       {/* {data.map((article, key) => <h5 onClick={() => TestCall(article)} key={key}>{key}</h5>)} */}

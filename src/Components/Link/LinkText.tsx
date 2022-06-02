@@ -4,12 +4,16 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 
-const StyledLink = styled.h2`
+const StyledLink = styled(Link)`
   /* color: grey; */
-  color: ${(props) => (props.color ? "grey" : "blue")};
-  color: white;
-  
+  /*color: ${(props) => (props.color ? "grey" : "blue")};*/
+  text-decoration: none;
+  color: black;
+  height:100%;
+  width:100%;
 `;
+
+
 
 interface props {
     label: string;
@@ -20,9 +24,9 @@ interface props {
 
 const LinkText = ({label, urladress, searchterm}: props) => {
   if (searchterm) {
-    return <Link to={`/${urladress}/${searchterm}`}>{label}</Link>;
+    return <StyledLink to={`/${urladress}/${searchterm}`}>{label}</StyledLink>;
   }
-  return <Link to={`/${urladress}`}>{label}</Link>;
+  return <StyledLink to={`/${urladress}`}>{label}</StyledLink>;
 }
 
 
