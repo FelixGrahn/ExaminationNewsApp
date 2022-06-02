@@ -24,12 +24,12 @@ const NavbarStyling = styled.div`
 
 const LinkStyling = styled.div`
   justify-content: space-evenly;
-  width: 50%;
+  margin-left: 130px;
+  margin-right: 330px;
   font-size: 1.25rem;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   display: flex;
-
   justify-content: center;
   width: 100%;
   place-content: space-evenly;
@@ -47,6 +47,7 @@ const LinkStyling = styled.div`
   }
   @media (max-width: 414px) {
     position: fixed;
+    margin-left: 46px;
     justify-content: space-around;
     z-index: 1;
     /* left: 2%; */
@@ -96,8 +97,10 @@ const LogoutButton = styled.button`
     color: white;
   }
   @media (max-width: 414px) {
-    position: relative;
-    left: 10%;
+    position: absolute;
+    left: 68%;
+    top: -84%;
+    align-self:center;
     display: flex;
     margin-left: auto;
   }

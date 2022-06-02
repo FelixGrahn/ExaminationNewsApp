@@ -17,11 +17,13 @@ const FooterNavbarStyling = styled.div`
 const FooterText = styled.div`
   /* position: relative; */
   justify-content: space-between;
+  margin-right: 140px;
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
-  /* left: 6%;
-  padding-right: 1.25rem; */
+  @media (max-width: 414px) {
+   position:absolute;
+  }
 `;
 
 
@@ -33,16 +35,16 @@ const Footer = ({}: props) => {
   return (
     <FooterNavbarStyling>
       <FooterText>
-        <h3>Contact</h3>
+        <h3>Copyright © 2022</h3>
       </FooterText>
       <FooterText>
-        <h3>About</h3>
+        <h3></h3>
       </FooterText>
       <FooterText>
-        <h3>Our Team</h3>
+        <h3></h3>
       </FooterText>
       <FooterText>
-        <h3>Jobs</h3>
+        <h3></h3>
       </FooterText>
     </FooterNavbarStyling>
   );

@@ -15,13 +15,13 @@ const NavbarStyling = styled.div`
   position: sticky;
   .searchfield {
     /* position: relative; */
-    width: 90%;
+    width: 95%;
     height: 1.875rem;
     top: -200%;
     left: 8%;
     @media (max-width: 414px) {
-      width: 84%;
-      position: relative;
+      width: 93%;
+      //position: relative;
       left: 5%;
     }
   }
@@ -31,7 +31,7 @@ const NavbarStyling = styled.div`
     top: 80px;
     left: 65%;
     width: 144px;
-    height: 216px;
+    height: 290px;
   }
 `;
 const LinkStyling = styled.div`

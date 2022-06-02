@@ -13,7 +13,8 @@ const CardContainer = styled.div`
   flex-direction: column;
   margin: 0.2rem;
   @media (max-width: 414px) {
-    width: 60%;
+    width: 94%;
+    
   }
 `;
 
@@ -22,21 +23,23 @@ const StyledWrapper = styled.div`
   display: flex;
   align-items: center;
   @media (max-width: 414px) {
-    width: 99%;
+   
+    
   }
 `;
 
 const CardContainerAlign = styled.div`
- // background-color: #e2f2bfe3;
   display: flex;
   justify-content: space-around;
-
+  @media (max-width: 414px) {
+    width: 100%;
+    flex-flow: column;
+  }
 `;
 
 const StyledH2 = styled.h2``;
 
 const StyledCardHeader = styled.div`
-  font-color: black;
   font-size: 18px;
   a:-webkit-any-link {
     color: black;

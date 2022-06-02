@@ -7,27 +7,32 @@ import LinkText from "../Components/Link/LinkText";
 
 
 
+
 const Form = styled.form`
   flex-direction: column;
   display: flex;
   align-items: center;
+  @media (max-width: 414px) {
+    margin-top:60px;
+    margin-left: 40px;
+  }
 `;
 
 const TextInput = styled.input`
-  top: 40px;
+  top: 2.5rem;
   width: 60%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   box-sizing: border-box;
 
   @media (max-width: 414px) {
-    width: 200px;
-    height: 50px;
-    left: 4%;
-    top: 150px;
+    width: 12.5rem;
+    height: 3.125rem;
+   margin-left: 22px;
+    top: 9.375rem;
   }
 `;
 
@@ -38,43 +43,49 @@ const ButtonParent = styled.div`
   width: 100%;
   justify-content: center;
   display: flex;
+  @media (max-width: 414px) {
+    display:block;
+    margin-top: 20px;
+    margin-right: 130px;
+    width:30px;
+  }
 `;
 
 const Button = styled.button`
   width: 30%;
-  height: 40px;
-  top: 114px;
+  height: 2.5rem;
+  top: 7.125rem;
   left: 115%;
   @media (max-width: 414px) {
-    width: 160px;
-    height: 50px;
+    width: 180px;
+    height: 40px;
     left: -40%;
-    top: 220px;
+    top: 13.75rem;
   }
 `;
 const RegisterContainer = styled.button`
   width: 30%;
-  height: 40px;
-  top: 114px;
+  height: 2.5rem;
+  top: 7.125rem;
   left: 115%;
   @media (max-width: 414px) {
-    width: 160px;
-    height: 50px;
-    left: -40%;
-    top: 220px;
+    width: 180px;
+    height: 3.125rem;
+    margin-left: 0px;
+    top: 13.75rem;
   }
 `;
 
 const Title = styled.h1`
   position: relative;
   left: 120%;
-  top: 10px;
+  top: 0.625rem;
   font-family: Arial, Helvetica, sans-serif;
   @media (max-width: 414px) {
-    width: 160px;
-    height: 50px;
+    width: 10rem;
+    height: 3.125;
     left: 56%;
-    top: 60px;
+    top: 3.75;
   }
 `;
 
@@ -116,7 +127,7 @@ function Login() {
   }, []);
 
   return (
-    <div>
+   
       <Form>
         <TextInput
           id="user"
@@ -144,7 +155,7 @@ function Login() {
           
         </ButtonParent>
       </Form>
-    </div>
+   
   );
 }
 

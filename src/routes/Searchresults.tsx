@@ -21,11 +21,14 @@ const StyledWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  @media (max-width: 414px) {
+    max-width: 80%
+  }
 `;
 
 const StyledCardHeader = styled.div`
   font-color: black;
-  font-size: 20px;
+  font-size: 1.25rem;
   a:-webkit-any-link {
     color: black;
     cursor: pointer;

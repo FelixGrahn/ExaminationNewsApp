@@ -13,6 +13,10 @@ const Form = styled.form`
   display: flex;
   justify-content: center;
   width: 50%;
+  @media (max-width: 414px) {
+    margin-top: 30px;
+   
+  }
 
   /* left: 280%;
   width: 140%;
@@ -28,23 +32,24 @@ const TextInput = styled.input`
   top: 40px;
   padding: 12px 20px;
   margin: 8px 0; */
-  height: 40px;
+  height: 2.5rem;
   display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.25rem;
   box-sizing: border-box;
   @media (max-width: 414px) {
-    /* top: 7.5rem; */
-    /* width: 12.5rem;
-    height: 3.125rem; */
-    /* left: 4%; */
+
+   width: 200px;
+   height:50px;
+   margin-top:5px;
+   margin-right: 70px;
   }
 `;
 
 const Label = styled.label``;
 
 const Button = styled.button`
-  height:40px;
+  height: 2.5rem;
   /*position: relative;*/
   /* left: 37.5rem;
   width: 60%;
@@ -52,17 +57,13 @@ const Button = styled.button`
   top: 70px; */
   /* left: -4%; */
   @media (max-width: 414px) {
-    /* width: 10rem;
-    height: 3.125rem; */
-    /* top: 180px; */
-    /* left: -42%; */
+    width: 200px;
   }
 `;
 
 const StyledDiv = styled.div`
   width: 100%;
   height: 100%;
-  
   text-align: -webkit-center;
 `;
 

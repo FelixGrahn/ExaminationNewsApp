@@ -2,8 +2,11 @@ import * as React from 'react'
 import styled from "styled-components";
 
 const StyledWrapper = styled.div`
+  background-color: #e2f2bfe3;
+  height: 600px;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   font-family: "Lucida Console", "Monaco", monospace;
   .article-container {
@@ -17,7 +20,8 @@ const StyledWrapper = styled.div`
   }
 
   @media (max-width: 414px) {
-    width: 55%;
+    width: 100%;
+    height: 50rem;
   }
 `;
 
