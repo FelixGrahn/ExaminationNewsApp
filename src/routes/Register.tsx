@@ -12,6 +12,7 @@ const handleSubmit = (event) => {
 const Form = styled.form`
   display: flex;
   justify-content: center;
+  margin-top: 100px;
   width: 50%;
   @media (max-width: 414px) {
     margin-top: 30px;

@@ -10,10 +10,11 @@ import LinkText from "../Components/Link/LinkText";
 
 const Form = styled.form`
   flex-direction: column;
+  margin-top: 100px;
   display: flex;
   align-items: center;
   @media (max-width: 414px) {
-    margin-top:60px;
+    margin-top: 60px;
     margin-left: 40px;
   }
 `;
